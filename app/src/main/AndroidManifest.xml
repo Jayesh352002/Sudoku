@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sudoApp">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sudoicon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sudoicon1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Sudoku">
+        <activity android:name="com.example.sudoApp.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.sudoApp.Dialog" />
+        <activity android:name="com.example.sudoApp.AboutApp" />
+        <activity android:name="com.example.sudoApp.ThemeBack" />
+        <activity android:name="com.example.sudoApp.Theme" />
+        <activity android:name="com.example.sudoApp.HowToPlay" />
+        <activity android:name="com.example.sudoApp.Settings" />
+        <activity
+            android:name="com.example.sudoApp.Easy"
+            android:configChanges="orientation" />
+        <activity android:name="com.example.sudoApp.Expert" />
+        <activity android:name="com.example.sudoApp.Hard" />
+        <activity android:name="com.example.sudoApp.Medium" />
+        <activity android:name="com.example.sudoApp.Simple" />
+        <activity android:name="com.example.sudoApp.Level" />
+        <activity android:name="com.example.sudoApp.MainActivity">
+        </activity>
+
+        <service android:name="com.example.sudoApp.BackgroundSound1" />
+    </application>
+
+</manifest>
